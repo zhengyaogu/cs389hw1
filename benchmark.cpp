@@ -68,5 +68,11 @@ int main()
 		}
 		double avg_time = min_time / static_cast<double>(curr_size);
 		std::cout << avg_time << "\n";
+		
+		/* deallocater vectors */
+		buffer.clear();
+		rand_indices.clear();
+		buffer.shrink_to_fit();
+		rand_indices.shrink_to_fit();
 	}
 }
